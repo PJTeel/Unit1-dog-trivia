@@ -1,4 +1,14 @@
+#pageHeader {
+    position: fixed;
+    background: yellow;
+    top: 0px;
+    width: 100%;
+    height:auto;
+    left: 0px;
+}
+
 body {
+    margin-top: 150px;
     background-color: aqua;
 }
 
