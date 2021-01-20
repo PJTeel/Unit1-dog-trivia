@@ -1,4 +1,6 @@
 //console.log("hello")
+
+/*
 let playChoice
 let ansCorrect = 0;
 let ansWrong = 0;
@@ -15,3 +17,4 @@ var quiz = [
     answer: 1 //Terrier Group
     }
 ]
+*/
