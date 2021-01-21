@@ -11,43 +11,29 @@
         <h1>Dog Trivia</h1>
         <h2>How well do you know your furry friend?</h2>
     </div>
-    <form id="questions">
-        <p>How many permanent teeth do adults dogs have?</p>
-        <input type="radio" name="teeth" value="0"/>37<br />
-        <input type="radio" name="teeth" value="1"/>42<br />
-        <input type="radio" name="teeth" value="0"/>40<br />
-        <input type="radio" name="teeth" value="0"/>45<br />
-        <p>Which breed won the Westminster Dog Show the most times?</p>
-        <input type="radio" name="westminster" value="0"/>37<br />
-        <input type="radio" name="westminster" value="1"/>42<br />
-        <input type="radio" name="westminster" value="0"/>40<br />
-        <input type="radio" name="westminster" value="0"/>45<br />
-        <p>Which breed won the Westminster Dog Show the most times?</p>
-        <input type="radio" name="one" value="0"/>37<br />
-        <input type="radio" name="one" value="1"/>42<br />
-        <input type="radio" name="one" value="0"/>40<br />
-        <input type="radio" name="one" value="0"/>45<br />
-        <p>Which breed won the Westminster Dog Show the most times?</p>
-        <input type="radio" name="two" value="0"/>37<br />
-        <input type="radio" name="two" value="1"/>42<br />
-        <input type="radio" name="two" value="0"/>40<br />
-        <input type="radio" name="two" value="0"/>45<br />
-        <p>Which breed won the Westminster Dog Show the most times?</p>
-        <input type="radio" name="three" value="0"/>37<br />
-        <input type="radio" name="three" value="1"/>42<br />
-        <input type="radio" name="three" value="0"/>40<br />
-        <input type="radio" name="three" value="0"/>45<br />
-        <p>Which breed won the Westminster Dog Show the most times?</p>
-        <input type="radio" name="four" value="0"/>37<br />
-        <input type="radio" name="four" value="1"/>42<br />
-        <input type="radio" name="four" value="0"/>40<br />
-        <input type="radio" name="four" value="0"/>45<br />
-        <div id="quiz"></div>
-        <button class id='submit'>Submit</button>
-        <!-- <button class id='start'>Start</button> -->
-        <p>Your score:</p>
-        <script src="./script.js" defer></script>
+    
+    <form id="quiz" name="quiz">
+        <div>
+            <p>1. Which breed has won the Westminster Dog Show the most times?</p>
+            <p><input type="radio" name="question1" value="Sporting Group">A. Sporting Group</p>
+            <p><input type="radio" name="question1" value="Terrier Group">B. Terrier Group</p>
+            <p><input type="radio" name="question1" value="Toy Group">C. Toy Group</p>
+            <p><input type="radio" name="question1" value="Hpund Group">D. Hpund Group</p>
+        </div> 
+        
+        <div>
+            <p>2. How many permanent teeth do adult dogs have?</p>
+            <p><input type="radio" name="question2" value="37">A. 37</p>
+            <p><input type="radio" name="question2" value="42">B. 42</p>
+            <p><input type="radio" name="question2" value="40">C. 40</p>
+            <p><input type="radio" name="question2" value="45">D. 45</p>
+        </div> 
+    <input type="button" name="" value="I'm done!" onclick="check()">
+    
     </form>
-</body>
+        
+
+        <script src="./script.js" defer></script>
+   </body>
 </html>
 
