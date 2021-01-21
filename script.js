@@ -6,27 +6,28 @@ function check() {
 	var q2=document.quiz.question2.value;
 	if (q2=="42") {c++}
 	document.write(c)
+	var q3=document.quiz.question3.value;
+	if (q3=="195") {c++}
+	document.write(c)
+	var q4=document.quiz.question4.value;
+	if (q4=="Labrador") {c++}
+	document.write(c)
+	var q5=document.quiz.question5.value;
+	if (q5=="Greyhound") {c++}
+	document.write(c)
+	var q6=document.quiz.question6.value;
+	if (q6=="Luna") {c++}
+	document.write(c)
+	var q7=document.quiz.question7.value;
+	if (q7=="29") {c++}
+	document.write(c)
+	var q8=document.quiz.question8.value;
+	if (q8=="True") {c++}
+	document.write(c)
+	var q9=document.quiz.question9.value;
+	if (q9=="False") {c++}
+	document.write(c)
+	var q10=document.quiz.question10.value;
+	if (q10=="True") {c++}
+	document.write(c)
 }
-/*var userInput = [];
-
-var answers = ["B"]
-//answers[0] = ;
-
-function getCheckedValue (radioName){
-	var radios = document.getElementsByName(radioName);
-	for(var y=0; y<radios.length; y++)
-		if (radios(y).checked) return radios[y].value;
-}
-function getScore() {
-	var score = 0;
-	for(var i=1; i<=10; i++) 
-	if(getCheckedValue("question"+i) === answers[i]) score += 1;
-	return score;
-}
-	
-function returnScore(){
-	alert("Your score is: " + getScore()+ "/" + 10);
-}
-
-console.log(score);
-*/
