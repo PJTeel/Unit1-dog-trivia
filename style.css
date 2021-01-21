@@ -1,24 +1,35 @@
 #pageHeader {
     position: fixed;
-    background: yellow;
+    background: red;
     top: 0px;
     width: 100%;
     height:auto;
     left: 0px;
 }
 
+h1, h2 {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    color: white;
+}
 body {
     margin-top: 150px;
-    background-color: aqua;
+    font-family: 'Grandstander', cursive;
+    font-weight: bolder;
+    margin-left: 2rem;
+    /* background-image: url(https://publicdomainpictures.net/pictures/50000/velka/paw-prints-1369754041WaV.jpg); */
+    background-image: url(https://thumbs.dreamstime.com/b/cute-seamless-pattern-paw-prints-animal-background-eps-91841686.jpg);
 }
+
 
 p {
     font-size: larger;
 }
 
 #button {
-    color: violet;
+    color:white;
     font-size: 20pt;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: red;
 }
