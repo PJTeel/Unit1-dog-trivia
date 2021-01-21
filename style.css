@@ -15,3 +15,8 @@ body {
 p {
     font-size: larger;
 }
+
+#button {
+    color: violet;
+    font-size: 20pt;
+}
