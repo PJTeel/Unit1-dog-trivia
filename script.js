@@ -1,3 +1,5 @@
+document.getElementById("quiz").reset();
+
 function check() {
 	var c=0;
 	var q1=document.quiz.question1.value;
@@ -23,10 +25,12 @@ function check() {
 	//document.write(c)
 
 	var quiz=document.getElementById('quiz');
-	quiz.style.display="none" //clears the screen before displaying the results
-
 	var result=document.getElementById('result');
+	quiz.style.display="none" //clears the screen before displaying the results
 	result.textContent=(c);
 
+if (c<=3){
+	result.textContent="You got " + (result.textContent=(c)) + " correct.   Maybe you should stick with cats!"
+	}
 }
 
