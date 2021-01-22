@@ -1,5 +1,13 @@
 document.getElementById("quiz").reset();
 
+start.addEventListener("click",startQuiz);
+/*
+function startQuiz () {
+	start.style.display = "none";
+	quiz.style.display = "block";
+
+}
+*/
 function check() {
 	var c=0;
 	var q1=document.quiz.question1.value;
@@ -31,14 +39,17 @@ function check() {
 
 if (c<=3){
 	result.textContent="You got " + (result.textContent=(c)) + " correct.   Maybe you should stick with cats!";
-	//  document.getElementById(myImg).src="http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg";
+	// image("http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg");
 	}
 else if (c>3 && c<7){
 		result.textContent="You got " + (result.textContent=(c)) + " correct.   You achieved Best in breed!";
-		document.getElementById(myImg2).src="https://www.stickershoppe.com/mm5/graphics/00000001/BR34.jpg";
+		// document.getElementById(myImg2).src="https://www.stickershoppe.com/mm5/graphics/00000001/BR34.jpg";
 	}
 	else result.textContent="You got " + (result.textContent=(c)) + " correct.   You achieved Best is show!"
+
 }
+
+
 
 //var cat = document.createElement(url"https://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg");
 // var cat = img src(url(http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg));

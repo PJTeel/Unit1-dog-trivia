@@ -7,10 +7,24 @@
     left: 0px;
 }
 
+#container {
+    background: white;
+    width: 65%;
+    margin:20px auto;
+    padding: 25px;
+    border-color:black;
+    border-width: thin;
+    border-style: double;
+}
+
 h1, h2 {
     text-align: center;
     font-family: 'Grandstander', cursive;
     color: white;
+}
+
+h3 {
+    font-size: 17pt;
 }
 body {
     margin-top: 150px;
@@ -32,4 +46,5 @@ p {
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: red;
+    cursor: pointer;
 }

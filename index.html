@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Trivia</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css" />
 </head>
 <!-- <img id="myImg2" src="https://www.stickershoppe.com/mm5/graphics/00000001/BR34.jpg" width="107" height="98"> -->
     <body>
+        <div id="container">
+        <!-- <div id="start">Start Quiz!</div>           -->
     <div id="pageHeader">
         <h1>Dog Trivia</h1>
         <h2>How well do you know your four-legged friend?</h2>
     </div>
+
+
         <form id="quiz" name="quiz">
+            <!-- <div id="quiz" style="display: none"></div> -->
             <!-- <img id="myImg" src="http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg" width="107" height="98"> -->
         <div>
-            <p>1. Which breed has won the Westminster Dog Show the most times?</p>
+            <h3>1. Which breed has won the Westminster Dog Show the most times?</h3>
             <p><input type="radio" name="question1" value="Sporting Group">A. Sporting Group</p>
             <p><input type="radio" name="question1" value="Terrier Group">B. Terrier Group</p>
             <p><input type="radio" name="question1" value="Toy Group">C. Toy Group</p>
@@ -25,7 +29,7 @@
         </div> 
         
         <div>
-            <p>2. How many permanent teeth do adult dogs have?</p>
+            <h3>2. How many permanent teeth do adult dogs have?</h3>
             <p><input type="radio" name="question2" value="37">A. 37</p>
             <p><input type="radio" name="question2" value="42">B. 42</p>
             <p><input type="radio" name="question2" value="40">C. 40</p>
@@ -33,7 +37,7 @@
         </div> 
 
         <div>
-            <p>3. How many breeds did AKC officially recognize in 2020?</p>
+            <h3>3. How many breeds did AKC officially recognize in 2020?</h3>
             <p><input type="radio" name="question3" value="193">A. 193</p>
             <p><input type="radio" name="question3" value="190">B. 190</p>
             <p><input type="radio" name="question3" value="197">C. 197</p>
@@ -41,7 +45,7 @@
         </div> 
 
         <div>
-            <p>4. What was the most popular dog breed in 2020?</p>
+            <h3>4. What was the most popular dog breed in 2020?</h3>
             <p><input type="radio" name="question4" value="Golden Retriever">A. Golden Retriever</p>
             <p><input type="radio" name="question4" value="Cocker Spaniel">B. Cocker Spaniel</p>
             <p><input type="radio" name="question4" value="Labrador">C. Labrador</p>
@@ -49,7 +53,7 @@
         </div> 
 
         <div>
-            <p>5. What is the fastest dog breed?</p>
+            <h3>5. What is the fastest dog breed?</h3>
             <p><input type="radio" name="question5" value="Greyhound">A. Greyhound</p>
             <p><input type="radio" name="question5" value="Saluki">B. Saluki</p>
             <p><input type="radio" name="question5" value="Aphgan Hound">C. Aphgan Hound</p>
@@ -57,7 +61,7 @@
         </div> 
 
         <div>
-            <p>6. What was the most popular dog name in 2020?</p>
+            <h3>6. What was the most popular dog name in 2020?</h3>
             <p><input type="radio" name="question6" value="Charlie">A. Charlie</p>
             <p><input type="radio" name="question6" value="Lucy">B. Lucy</p>
             <p><input type="radio" name="question6" value="Max">C. Max</p>
@@ -65,7 +69,7 @@
         </div> 
 
         <div>
-            <p>7. What age did the oldest dog live to be?</p>
+            <h3>7. What age did the oldest dog live to be?</h3>
             <p><input type="radio" name="question7" value="22">A. 22</p>
             <p><input type="radio" name="question7" value="30">B. 30</p>
             <p><input type="radio" name="question7" value="25">C. 25</p>
@@ -74,19 +78,19 @@
         </div> 
 
         <div>
-            <p>8. Dogs have three eyelids?</p>
+            <h3>8. Dogs have three eyelids.</h3>
             <p><input type="radio" name="question8" value="True">A. True</p>
             <p><input type="radio" name="question8" value="False">B. False</p>
         </div> 
 
         <div>
-            <p>9. Male dogs tend to bite more than females?</p>
+            <h3>9. Male dogs tend to bite more than females.</h3>
             <p><input type="radio" name="question9" value="True">A. True</p>
             <p><input type="radio" name="question9" value="False">B. False</p>
         </div> 
 
         <div>
-            <p>10. Dogs are the most popular pet in the United States?</p>
+            <h3>10. Dogs are the most popular pet in the United States.</h3>
             <p><input type="radio" name="question10" value="True">A. True</p>
             <p><input type="radio" name="question10" value="False">B. False</p>
         </div> 
@@ -95,7 +99,7 @@
     <input type="button" name="" value="I'm done!" id="button" onclick="check()">
     
     </form>
-    
+    <!-- </div> -->
     <p id="result"></p>
 
         <script src="./script.js" defer></script>
