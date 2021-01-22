@@ -1,6 +1,6 @@
-document.getElementById("quiz").reset();
+let quizForm = document.getElementById("quiz");
 
-start.addEventListener("click",startQuiz);
+quizForm.addEventListener("submit", submitAnswers);
 /*
 function startQuiz () {
 	start.style.display = "none";
@@ -8,45 +8,58 @@ function startQuiz () {
 
 }
 */
-function check() {
-	var c=0;
-	var q1=document.quiz.question1.value;
-	if (q1=="Terrier Group") {c++};
-		var q2=document.quiz.question2.value;
-	if (q2=="42") {c++}
-		var q3=document.quiz.question3.value;
-	if (q3=="195") {c++}
-		var q4=document.quiz.question4.value;
-	if (q4=="Labrador") {c++}
-		var q5=document.quiz.question5.value;
-	if (q5=="Greyhound") {c++}
-		var q6=document.quiz.question6.value;
-	if (q6=="Luna") {c++}
-		var q7=document.quiz.question7.value;
-	if (q7=="29") {c++}
-		var q8=document.quiz.question8.value;
-	if (q8=="True") {c++}
-		var q9=document.quiz.question9.value;
-	if (q9=="False") {c++};
-		var q10=document.quiz.question10.value;
-	if (q10=="True") {c++}
-	//document.write(c)
 
+//Set initial score and get user selections
+function submitAnswers(event){
+	event.preventDefault();
+	var total = 10;
+	var score = 0;
+
+var q1 = document.forms["quiz"]["q1"].value;
+var q2 = document.forms["quiz"]["q2"].value;
+var q3 = document.forms["quiz"]["q3"].value;
+var q4 = document.forms["quiz"]["q4"].value;
+var q5 = document.forms["quiz"]["q5"].value;
+var q6 = document.forms["quiz"]["q6"].value;
+var q7 = document.forms["quiz"]["q7"].value;
+var q8 = document.forms["quiz"]["q8"].value;
+var q9 = document.forms["quiz"]["q9"].value;
+var q10 = document.forms["quiz"]["q10"].value;
+
+//Validation
+for(i = 1; i<=total; i++) {
+	if(eval('q'+i) == null || eval('q'+i) == '') {
+		alert('You forgot to answer question ' + i);
+		return false;
+	}
+
+}
+//Put correct answers in an array
+var correctAnswers = ["b", "b", "d", "c", "a", "d", "d", "a", "b", "a"];
+
+//check the answers
+for(i = 1; i<=total; i++) {
+	if(eval('q'+i) ===  correctAnswers[i-1]) {
+		score++;
+	}
+}
+//Display results
+//alert('You scored ' +score+ ' out of ' +total);
 	var quiz=document.getElementById('quiz');
-	var result=document.getElementById('result');
+	var result=document.getElementById('score');
 	quiz.style.display="none" //clears the screen before displaying the results
-	result.textContent=(c);
+	result.textContent=(score);
 
-if (c<=3){
-	result.textContent="You got " + (result.textContent=(c)) + " correct.   Maybe you should stick with cats!";
+if (score<=3){
+	result.textContent="You got " + (result.textContent=(score)) + " correct.   Maybe you should stick with cats!";
 	// image("http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg");
 	}
-else if (c>3 && c<7){
-		result.textContent="You got " + (result.textContent=(c)) + " correct.   You achieved Best in breed!";
+else if (score>3 && score<=7){
+	result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best in breed!";
 		// document.getElementById(myImg2).src="https://www.stickershoppe.com/mm5/graphics/00000001/BR34.jpg";
 	}
-	else result.textContent="You got " + (result.textContent=(c)) + " correct.   You achieved Best is show!"
-
+	else result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best is show!"
+quizForm.reset() 
 }
 
 
