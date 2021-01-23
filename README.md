@@ -1,17 +1,17 @@
 # Unit1-dog-trivia
 used radial buttons because only allowed to submit one answer to each question.
 <p align="center">
-  <a href="https://github.com/PJTeel/Mini-Project---DOM">
+  <a href="https://github.com/PJTeel/Unit1-dog-trivia">
     <img src="https://weqyoua.com/files/quiz_banner/banner/5630/65.png" 
-    width="80" height="80">
+    width="100" height="80">
   </a>
 
-  <h3 align="center">Mini-Project 3 - DOM</h3>
+  <h3 align="center">Unit 1 Project</h3>
 
   <p align="center">
-    Cat API and User Interface
+    Self-scoring dog trivia game
     <br />
-    <a href="https://github.com/PJTeel/Mini-Project---DOM"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/PJTeel/Unit1-dog-trivia"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/github_username/repo_name">View Demo</a> -->
@@ -57,7 +57,9 @@ used radial buttons because only allowed to submit one answer to each question.
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-In this project I have created a user interface to interact with TheCatApi // Developer Experience API. I used a hamburger style menu to hold a list of different cat breeds. Select one of the breeds listed on the menu and a picture of that type of cat will be displayed.
+In this project I have created a self-scoring dog trivia game consisting of 10 questions. Some of the questions are super easy, others not so much. I chose to use radio style buttons so a person could select only one answer per question. The quiz is a mixture of multiple choice and true false questions. In order to submit their answers, a person must answer each of the questions. 
+
+Enjoy the game! 
 <!-- **To avoid retyping too much info. Do a search and replace with your text editor for the following:** -->
 <!-- `github_username`, `Twitter Account`, `repo_name`, `email`, `project_title`, `project_description` -->
 
@@ -65,7 +67,6 @@ In this project I have created a user interface to interact with TheCatApi // De
 ### Built With
 
 * [GitHub](https://github.com/)
-* [TheCatAPI // Developer Experience](https://docs.thecatapi.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 
@@ -87,7 +88,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/PJTeel/Mini-Project---DOM.git
+   git clone https://github.com/PJTeel/Unit1-dog-trivia.git
    ```
 2. Install NPM packages
    ```sh
@@ -99,7 +100,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This site is useful for people wanting to know what a specific cat breed looks like.
+This is a simple quiz to see how much you really know about dogs.
 
 <!--_For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -108,7 +109,7 @@ This site is useful for people wanting to know what a specific cat breed looks l
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/PJTeel/Mini-Project---DOM/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/PJTeel/Unit1-dog-trivia) for a list of proposed features (and known issues).
 
 
 
@@ -159,4 +160,4 @@ e-mail: pteel@msn.com, LinkedIn: https://www.linkedin.com/in/paula-teel-87a72a48
 <!--Acknowledgement-->
 ## Acknowledgements
 
-This project would not have been possible without the help of all the folks at General Assembly (https://generalassemb.ly/) as well as my cohort teammates.
+This project would not have been possible without the help of all the folks at General Assembly (https://generalassemb.ly/), my cohort teammates and my mentor/coach.
