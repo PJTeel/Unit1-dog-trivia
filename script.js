@@ -49,17 +49,23 @@ for(i = 1; i<=total; i++) {
 	var result=document.getElementById('score');
 	quiz.style.display="none" //clears the screen before displaying the results
 	result.textContent=(score);
+	let prizePic=document.getElementById('prize');
 
+	
 if (score<=3){
 	result.textContent="You got " + (result.textContent=(score)) + " correct.   Maybe you should stick with cats!";
-	// image("http://getdrawings.com/image/grumpy-cat-cartoon-drawing-51.jpg");
+	prizePic.src = "./images/grumpy-cat-cartoon-drawing-51.jpg";
+	console.log(prizePic);
 	}
 else if (score>3 && score<=7){
 	result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best in breed!";
-		// document.getElementById(myImg2).src="https://www.stickershoppe.com/mm5/graphics/00000001/BR34.jpg";
+	prizePic.src = "./images/breed.jpg";
 	}
-	else result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best is show!"
-quizForm.reset() 
+	else { result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best is show!";
+	prizePic.src = "./images/show.jpg";
+}
+	quizForm.reset();
+	
 }
 
 
