@@ -58,10 +58,10 @@ if (score<=3){
 	console.log(prizePic);
 	}
 else if (score>3 && score<=7){
-	result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best in breed!";
+	result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best of breed!";
 	prizePic.src = "./images/breed.jpg";
 	}
-	else { result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best is show!";
+	else { result.textContent="You got " + (result.textContent=(score)) + " correct.   You achieved Best in show!";
 	prizePic.src = "./images/show.jpg";
 }
 	quizForm.reset();
