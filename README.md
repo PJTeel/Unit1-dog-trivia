@@ -3,7 +3,7 @@ used radial buttons because only allowed to submit one answer to each question.
 <p align="center">
   <a href="https://github.com/PJTeel/Unit1-dog-trivia">
     <img src="https://weqyoua.com/files/quiz_banner/banner/5630/65.png" 
-    width="100" height="80">
+    width="120" height="90">
   </a>
 
   <h3 align="center">Unit 1 Project</h3>
