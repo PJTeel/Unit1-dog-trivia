@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Trivia</title>
+    <title>Dog Trivia Game</title>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    <div id="container">
         <div id="pageHeader">
              <h1>Dog Trivia</h1>
              <h2>How well do you know your four-legged friend?</h2>
+             <button id="start-btn" class='start-btn btn'>Start &#128062</button> 
         </div>
-    <section>        
-<div id="resuls"></div>
-        <form id="quiz" name="quiz" onsubmit="return submitAnswers()">
+        
+    <section id="container" class="hide">   
+
+    <section id="results">       
+        
+        <form id="quiz" class="hide" name="quiz" onsubmit="return submitAnswers()">
             <div>
                 <h3>1. Which breed has won the Westminster Dog Show the most times?</h3>
                 <p><input type="radio" name="q1" id="q1a" value="a">a. Sporting Group</p>
@@ -90,15 +94,17 @@
                 <p><input type="radio" name="q10" id="q10b" value="b">b. False</p>
             </div> 
 
-        <input type="submit" value="Submit Answers &#128054;">
-    
-            </form>
-        </section>
+            <input type="submit" value="Submit Answers &#128054;">
+   
+        </form>
+   
         <p id="score"></p>
-	    <img id="prize"><img src="" class="prizeImage"></div>
-    </div> 
+        <img id="prize"><img src="" class="prizeImage"></div>
+
+    </div>
 
   <script src="./script.js" defer></script>
 </body>
+
 </html>
 

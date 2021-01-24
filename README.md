@@ -100,7 +100,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This is a simple quiz to see how much you really know about dogs.
+This is a simple multiple choice quiz to see how much you really know about dogs.
 
 <!--_For more examples, please refer to the [Documentation](https://example.com)_
 
