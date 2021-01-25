@@ -1,5 +1,4 @@
 # Unit1-dog-trivia
-used radial buttons because only allowed to submit one answer to each question.
 <p align="center">
   <a href="https://github.com/PJTeel/Unit1-dog-trivia">
     <img src="https://weqyoua.com/files/quiz_banner/banner/5630/65.png" 
