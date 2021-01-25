@@ -2,6 +2,7 @@
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById('quiz')
 const backgroundContainerElement = document.getElementById('container')
+const prizePhotos = document.getElementById('prize')
 
 startButton.addEventListener('click', startGame)
 
@@ -9,6 +10,7 @@ function startGame () {
 	startButton.classList.add('hide')
 	questionContainerElement.classList.remove('hide')
 	backgroundContainerElement.classList.remove('hide')
+	prizePhotos.classList.remove('hide')
 }
 
 let quizForm = document.getElementById("quiz"); 
